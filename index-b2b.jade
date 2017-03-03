@@ -1,0 +1,49 @@
+doctype html
+html
+    head
+        include ap-vendor/a-head
+    body
+        .body
+            include ap-vendor/a-header
+            .main(role='main')
+                hr.transparent
+                .container
+                    .row
+                        .col-md-12
+                            .featured-boxes
+                                .row
+                                    .col-md-offset-3.col-sm-6
+                                        .featured-box.featured-box-primary.align-left.mt-xlg
+                                            .box-content
+                                                h4.heading-primary.text-uppercase.mb-md Я зареєстрований b2b користувач
+                                                form#frmSignIn(action='/', method='post')
+                                                    .row
+                                                        .form-group
+                                                            .col-md-12
+                                                                label Імейл
+                                                                input.form-control.input-lg(type='text', value='')
+                                                    .row
+                                                        .form-group
+                                                            .col-md-12
+                                                                //a.pull-right(href='#') (Забули пароль?)
+                                                                label Пароль
+                                                                input.form-control.input-lg(type='password', value='')
+                                                    .row
+
+
+                                                        .col-md-offset-9.col-md-3
+                                                            a.btn.btn-primary.btn-slider.pull-right.mb-xl(href='index.html')
+                                                                span    Увійти
+
+
+
+                    hr.transparent
+
+
+
+
+    include ap-vendor/a-foot
+    include ap-vendor/a-main-vendor
+
+
+

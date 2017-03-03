@@ -1,0 +1,87 @@
+.body {
+  background-color: #eaeaea;
+}
+.list li {
+  margin-bottom: 0;
+}
+.transparent {
+  opacity: 0;
+}
+#top-content.container {
+  margin-top: 40px;
+}
+span.color-primary,
+strong.color-primary {
+  color: #930c29;
+}
+.btn-slider {
+  border-radius: 10px;
+}
+.btn-slider:hover {
+  border-radius: 10px;
+}
+.img-transp {
+  opacity: 0;
+  border-radius: 20px;
+}
+.img-bor-rad {
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+/* !!!!!3d Filters*/
+.img-mainteam-filter {
+  opacity: 0.9;
+  border-radius: 15px;
+  -webkit-transform: perspective(800px) rotate3d(0, 0, 0, 25deg) scale(0.7);
+  -webkit-transition: 0.35s ease all;
+  border: 2px inset black;
+}
+.img-mainteam-filter:hover {
+  border: 2px inset #a70002;
+  opacity: 1;
+  border-radius: 15px;
+  box-shadow: 1px 1px 30px 1px rgba(0, 0, 0, 0.7);
+  -webkit-transform: perspective(800px) rotate3d(10, -10, 1, 20deg) scale(0.85);
+}
+.img-main-filter {
+  opacity: 0.9;
+  -webkit-transform: perspective(800px) rotate3d(0, 0, 0, 25deg) scale(0.72);
+  -webkit-transition: 0.1s ease all;
+}
+.img-main-filter:hover {
+  opacity: 1;
+  -webkit-transform: perspective(800px) rotate3d(0, 10, 0, -15deg) scale(0.96);
+}
+.img-shop-filter {
+  -webkit-transform: scale(0.9);
+  -webkit-filter: grayscale(30%) saturate(80%) brightness(100%);
+  -webkit-transition: 0.2s ease-in-out all;
+}
+.img-shop-filter:hover {
+  -webkit-transform: scale(1.1);
+  -webkit-filter: grayscale(0) saturate(120%) brightness(110%);
+}
+/*.img-ajax-filter {
+  -webkit-transform: perspective(800px) rotate3d(0,0,0,25deg) scale(1.1);
+  -webkit-transition: 0.17s ease all;
+  &:hover {
+    -webkit-transform: perspective(800px) rotate3d(0,-10,0,-15deg) scale(0.9);
+  }
+}
+*/
+.img-team-static {
+  border-radius: 10%;
+  -webkit-box-shadow: 1px 1px 10px 1px gray;
+}
+footer#footer.top-class {
+  margin-top: 0;
+}
+section#bott-zero.parallax.section {
+  margin-bottom: 0;
+}
+.img-min {
+  max-width: 75px;
+  max-height: 75px;
+  min-width: 25px;
+  min-height: 25px;
+}

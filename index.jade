@@ -1,0 +1,21 @@
+doctype html
+html
+
+    head
+        include ap-vendor/a-head
+    body
+        .body
+            include ap-vendor/a-header
+            .main(role='main')
+
+                include ap-vendor/a-rev
+                include ap-vendor/a-main
+                include ap-vendor/a-store
+                section
+                    .container-fluid
+                        .row
+                            .col-md-6#map-super(style='width: 100%; height: 500px')
+
+    include ap-vendor/a-foot
+    include ap-vendor/a-main-vendor
+

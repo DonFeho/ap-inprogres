@@ -1,0 +1,71 @@
+header#header.header-no-border-bottom(data-plugin-options='{"stickyEnabled": true,  "stickyEnableOnBoxed": true, "stickyEnableOnMobile": true, "stickyStartAt": 130, "stickySetTop": "-130px", "stickyChangeLogo": false}')
+    .header-body
+        .header-container.container
+            .header-row
+                .header-column
+                    .header-logo
+                        a(href='index.html')
+                            img(alt='AutoPartner', width='112', height='102', data-sticky-width='84', data-sticky-height='40', data-sticky-top='33', src='ap-img/ap-old/new_logo_ap.jpg')
+                //.header-column
+                    select#search-select
+                        option(value='nothing') Nothing here yet
+                .header-column
+                    ul.header-extra-info
+                        li
+                            .feature-box.feature-box-call.feature-box-style-2
+                                .feature-box-icon
+                                    i.icon-call-end.icons
+                                .feature-box-info
+                                    h4.mb-none (097) 425 46 46
+                        li.hidden-xs
+                            .feature-box.feature-box-call.feature-box-style-2
+                                .feature-box-icon
+                                    i.icon-call-end.icons
+                                .feature-box-info
+                                    h4.mb-none (095) 470 30 34
+                        //li.hidden-xs
+                            .feature-box.feature-box-mail.feature-box-style-2
+                                .feature-box-icon
+                                    i.icon-envelope.icons
+                                .feature-box-info
+                                    h4.mb-none
+                                        a(href='mailto:avtopartnerlviv@gmail.com') avtopartnerlviv@gmail.com
+
+
+        .header-container.header-nav.header-nav-bar.header-nav-bar-primary
+            .container
+                button.btn.header-btn-collapse-nav(data-toggle='collapse', data-target='.header-nav-main')
+                    // Menu
+                    i.fa.fa-bars
+                .header-search
+                    //.visible-lg
+                    form#searchForm(action='index-b2b.html', method='get', novalidate='novalidate')
+                        .input-group
+                            input#q.form-control(type='text', name='q', placeholder='Пошук по коду', required='', aria-required='true')
+                            span.input-group-btn
+                                button.btn.btn-default(type='submit')
+                                    i.icon-magnifier.icons
+
+
+
+                .header-nav-main.header-nav-main-light.header-nav-main-effect-1.header-nav-main-sub-effect-1.collapse
+                    nav
+                        ul#mainNav.nav.nav-pills
+                            li
+                                a(href='index.html')
+                                    | АвтоПартнер
+                            li
+                                a(href='index-assorti.html')
+                                    | Вітрина
+                            //li
+                                a(href='index-b2b.html')
+                                    | Пошук по коду
+                            li
+                                a(href='index-b2b.html')
+                                    | B2B
+                            li
+                                a(href='index-faq.html')
+                                    | Faq
+                            //li
+                                a(href='index-cont.html')
+                                    | Контакти

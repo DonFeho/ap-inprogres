@@ -1,0 +1,118 @@
+-
+  var storeItems = [
+  {
+  heading: 'Мастило Addinol',
+  desc: 'моторне мастило Addinol semi synth 10w-40',
+  thumb: 'ap-img/ap-all-p/addinol/add-2.jpg',
+  image: 'ap-img/ap-all-p/addinol/add-2.jpg',
+  params: {
+  type: 'моторне',
+  mark: ' API SL/CF, ACEA A3/B4',
+  mark_next: 'VW 502 00/505 00 , MB-229.1',
+  capacity: '4л.'
+  },
+  country: 'Німеччина',
+  price: '490'
+  },
+  {
+  heading: 'Мастило Addinol',
+  desc: 'моторне мастило Addinol semi synth 10w-40',
+  thumb: 'ap-img/ap-all-p/addinol/add-2.jpg',
+  image: 'ap-img/ap-all-p/addinol/add-2.jpg',
+  params: {
+  type: 'моторне',
+  mark: ' API SL/CF, ACEA A3/B4',
+  mark_next: 'VW 502 00/505 00 , MB-229.1',
+  capacity: '4л.'
+  },
+  country: 'Німеччина',
+  price: '490'
+  },
+  {
+  heading: 'Мастило Addinol',
+  desc: 'моторне мастило Addinol semi synth 10w-40',
+  thumb: 'ap-img/ap-all-p/addinol/add-2.jpg',
+  image: 'ap-img/ap-all-p/addinol/add-2.jpg',
+  params: {
+  type: 'моторне',
+  mark: ' API SL/CF, ACEA A3/B4',
+  mark_next: 'VW 502 00/505 00 , MB-229.1',
+  capacity: '4л.'
+  },
+  country: 'Німеччина',
+  price: '490'
+  },
+  {
+  heading: 'Мастило Addinol',
+  desc: 'моторне мастило Addinol semi synth 10w-40',
+  thumb: 'ap-img/ap-all-p/addinol/add-2.jpg',
+  image: 'ap-img/ap-all-p/addinol/add-2.jpg',
+  params: {
+  type: 'моторне',
+  mark: ' API SL/CF, ACEA A3/B4',
+  mark_next: 'VW 502 00/505 00 , MB-229.1',
+  capacity: '4л.'
+  },
+  country: 'Німеччина',
+  price: '490'
+  }
+  ]
+each item in storeItems
+  #custom-content.white-popup-block.white-popup-block-md
+    .row
+      .col-md-12
+        h1.heading-primary
+          strong= item.heading
+        hr.solid
+        p.lead= item.desc
+
+    //hr
+    .row
+      .col-md-4
+        a.img-thumbnail.lightboximg-thumbnail.img-thumbnail-hover-icon.img-ajax-filter(title='', href='ap-img/ap-all-p/addinol/add-3.jpg', target='_blank', data-plugin-options='{"type":"image"}')
+          img.img-responsive(src='ap-img/ap-all-p/addinol/add-3.jpg')
+      .col-md-8
+
+        ul.portfolio-details
+          li
+            h5.mt-sm.mb-xs ПАРАМЕТРИ:
+            ul.list.list-icons
+              li
+                i.fa.fa-check-circle
+                = item.params.type
+              li
+                i.fa.fa-check-circle
+                = item.params.mark
+
+              li
+                i.fa.fa-check-circle
+                = item.params.mark_next
+
+              li
+                i.fa.fa-check-circle
+                | Об'єм:
+                = item.params.capacity
+    .row
+      .col-md-4
+        ul.portfolio-details
+          li
+            h5.mt-sm.mb-xs Виробник:
+            p= item.country
+      .col-md-4
+        ul.portfolio-details
+          li
+            h5.mt-sm.mb-xs Вартість:
+            p.lead
+              strong.color-primary
+              = item.price
+              | грн.
+
+      .col-md-4
+        ul.portfolio-details
+          li
+            a.btn.btn-primary.btn-icon.btn-slider.text-decoration-none(href='tel:+380968367658')
+              i.icon-call-out.icons
+              | Замовити!
+
+
+

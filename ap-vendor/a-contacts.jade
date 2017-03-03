@@ -1,0 +1,95 @@
+section
+
+    .container
+        .row
+            .col-md-6
+                #contactSuccess.alert.alert-success.hidden.mt-lg
+                    strong Успішно!
+                    |  Ваше повідомлення надіслано!
+                #contactError.alert.alert-danger.hidden.mt-lg
+                    strong Помилка!
+                    |  Щось пішло не так, повідомлення не надіслано...
+                    span#mailErrorMessage.font-size-xs.mt-sm.display-block
+                h2.mb-sm.mt-sm
+                    strong На
+                    |  зв'язку
+                form#contactForm(action='php/contact-form.php', method='POST')
+                    .row
+                        .form-group
+                            .col-md-6
+                                label Ім'я *
+                                input#name.form-control(type='text', value='', data-msg-required='Please enter your name.', maxlength='100', name='name', required='')
+                            .col-md-6
+                                label Імейл *
+                                input#email.form-control(type='email', value='', data-msg-required='Please enter your email address.', data-msg-email='Please enter a valid email address.', maxlength='100', name='email', required='')
+                    .row
+                        .form-group
+                            .col-md-12
+                                label Тема повідомлення
+                                input#subject.form-control(type='text', value='', data-msg-required='Please enter the subject.', maxlength='100', name='subject', required='')
+                    .row
+                        .form-group
+                            .col-md-12
+                                label Повідомлення *
+                                textarea#message.form-control(maxlength='5000', data-msg-required='Please enter your message.', rows='10', name='message', required='')
+                    .row
+                        .col-md-12
+                            input.btn.btn-primary.btn-lg.mb-xlg(type='submit', value='Send Message', data-loading-text='Loading...')
+            .col-md-6
+                h4.heading-primary.mt-lg
+                    | На
+                    strong Зв'язку
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                hr
+                h4.heading-primary
+                    | Наш
+                    strong магазин
+                ul.list.list-icons.list-icons-style-3.mt-xlg
+                    li
+                        i.fa.fa-map-marker
+                        strong Адреса:
+                        |  вул. Галицька 38, м. Зимна Вода, Україна.
+                    li
+                        i.fa.fa-phone
+                        strong
+                        |  +38(097) 425 46 46
+                    li
+                        i.fa.fa-phone
+                        strong Phone:
+                        |  (123) 456-789
+                    li
+                        i.fa.fa-phone
+                        strong Phone:
+                        |  (123) 456-789
+                    li
+                        i.fa.fa-phone
+                        strong Phone:
+                        |  (123) 456-789
+
+
+
+                    li
+                        i.fa.fa-envelope
+                        strong Email:
+                        a(href='mailto:mail@example.com') mail@example.com
+                hr
+                h4.heading-primary
+                    | Business
+                    strong Hours
+                ul.list.list-icons.list-dark.mt-xlg
+                    li
+                        i.fa.fa-clock-o
+                        |  Monday - Friday - 9am to 5pm
+                    li
+                        i.fa.fa-clock-o
+                        |  Saturday - 9am to 2pm
+                    li
+                        i.fa.fa-clock-o
+                        |  Sunday - Closed
+
+        hr.transparent
+
+    .container-fluid
+        .row
+            .col-md-6#map-super(style='width: 100%; height: 600px')
